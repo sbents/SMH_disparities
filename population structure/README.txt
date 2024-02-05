@@ -1,3 +1,3 @@
 State census data by race/ethnicity and age. 
 Sources: 
-https://www.census.gov/quickfacts/fact/table/CA/PST045223
+ACS 2021 1 year estimates 
