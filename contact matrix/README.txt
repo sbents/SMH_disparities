@@ -1,1 +1,1 @@
-Synthetic contact matrices using method described by Fumanelli et al., 2012. https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002673
+Synthetic contact matrices using method described by Fumanelli et al., 2012. https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002673. Matrices should be interpreted as the number of contacts an individual in group i (leftmost column in the matrix) has with individuals in group j. 
