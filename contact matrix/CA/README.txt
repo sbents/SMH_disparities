@@ -2,5 +2,5 @@ cleaned contact layers, note contacts here should be interpreted as effective co
 
 
 In the community layer, each row sums to 2.79 effective contacts. 
-In the school layer, each row sums to 11.31 effective contacts.
+In the school layer, each row sums to 11.41 effective contacts.
 Household contacts are based on empirical data. 
