@@ -1,0 +1,15 @@
+---
+title: "target_data_README"
+output: html_document
+date: "2024-02-20"
+---
+
+These files contain the calibration data for phase 1 and 2 of the SMH Disparities Round. 
+
+Brief file descriptions
+
+target_data_phase1.csv: Calibration data to be used for Phase 1. This file contains incident cases and deaths for California and North Carolina as reported to respective public health departments up until 11/14/2020. 
+
+target_data_phase2.csv: Calibration data to be used for Phase 2. This file contains incident cases and deaths for California and North Carolina as reported to respective public health departments up until 4/3/2021. 
+
+For any questions or issues, please contact sbents@alumni.princeton.edu. 
