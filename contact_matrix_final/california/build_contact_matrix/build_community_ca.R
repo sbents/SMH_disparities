@@ -15,7 +15,7 @@ assort_coeff= 0.0 # 1 indicates perfect assortativity (within-same race/ethnicit
 race_list <- c("asian", "white", "black", "latino", "other")
 
 
-censustract_ca %>% group_by(GEOID) %>%
+censustract_ca %>% group_by(geoid) %>%
   mutate(contact_asian = case_when(race_ethnicity == "asian" ~ 
                                      eff_contacts*assort_coeff + (1-assort_coeff)*percent[race_ethnicity == "asian"]*eff_contacts,
                                    TRUE ~ (1-assort_coeff)*percent[race_ethnicity == "asian"]*eff_contacts),

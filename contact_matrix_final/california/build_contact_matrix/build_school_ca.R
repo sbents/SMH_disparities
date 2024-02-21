@@ -14,22 +14,22 @@ race_list <- c("asian", "white", "black", "latino", "other")
 #### the number of 5-17 year old children in each race/ethnicity in each county's public school system
 publicschool_data = read.csv("publicschool_ca.csv")
 
-publicschool_data %>% group_by(GEOID) %>%
+publicschool_data %>% group_by(geoid) %>%
   mutate(contact_asian = case_when(race_ethnicity == "asian" ~ 
-                                     eff_contacts*assort_coeff + (1-assort_coeff)*percent_final[race_ethnicity == "asian"]*eff_contacts,
-                                   TRUE ~ (1-assort_coeff)*percent_final[race_ethnicity == "asian"]*eff_contacts),
+                                     eff_contacts*assort_coeff + (1-assort_coeff)*percent[race_ethnicity == "asian"]*eff_contacts,
+                                   TRUE ~ (1-assort_coeff)*percent[race_ethnicity == "asian"]*eff_contacts),
          contact_white = case_when(race_ethnicity == "white" ~ 
-                                     eff_contacts*assort_coeff + (1-assort_coeff)*percent_final[race_ethnicity == "white"]*eff_contacts,
-                                   TRUE ~ (1-assort_coeff)*percent_final[race_ethnicity == "white"]*eff_contacts),
+                                     eff_contacts*assort_coeff + (1-assort_coeff)*percent[race_ethnicity == "white"]*eff_contacts,
+                                   TRUE ~ (1-assort_coeff)*percent[race_ethnicity == "white"]*eff_contacts),
          contact_black = case_when(race_ethnicity == "black" ~ 
-                                     eff_contacts*assort_coeff + (1-assort_coeff)*percent_final[race_ethnicity == "black"]*eff_contacts,
-                                   TRUE ~ (1-assort_coeff)*percent_final[race_ethnicity == "black"]*eff_contacts),
+                                     eff_contacts*assort_coeff + (1-assort_coeff)*percent[race_ethnicity == "black"]*eff_contacts,
+                                   TRUE ~ (1-assort_coeff)*percent[race_ethnicity == "black"]*eff_contacts),
          contact_latino = case_when(race_ethnicity == "latino" ~ 
-                                     eff_contacts*assort_coeff + (1-assort_coeff)*percent_final[race_ethnicity == "latino"]*eff_contacts,
-                                   TRUE ~ (1-assort_coeff)*percent_final[race_ethnicity == "latino"]*eff_contacts),
+                                     eff_contacts*assort_coeff + (1-assort_coeff)*percent[race_ethnicity == "latino"]*eff_contacts,
+                                   TRUE ~ (1-assort_coeff)*percent[race_ethnicity == "latino"]*eff_contacts),
          contact_other = case_when(race_ethnicity == "other" ~ 
-                                     eff_contacts*assort_coeff + (1-assort_coeff)*percent_final[race_ethnicity == "other"]*eff_contacts,
-                                   TRUE ~ (1-assort_coeff)*percent_final[race_ethnicity == "other"]*eff_contacts)) %>%
+                                     eff_contacts*assort_coeff + (1-assort_coeff)*percent[race_ethnicity == "other"]*eff_contacts,
+                                   TRUE ~ (1-assort_coeff)*percent[race_ethnicity == "other"]*eff_contacts)) %>%
   ungroup() -> school_county_contacts
 
 #### total number of children 5-17 yo by race/ethnicity in the state
@@ -45,6 +45,7 @@ for(i in 1:length(race_list)){
     mutate(asian_k = children5_17*contact_asian, 
            white_k = children5_17*contact_white,
            black_k = children5_17*contact_black,
+           latino_k = children5_17*contact_latino,
            other_k = children5_17*contact_other) %>%
     summarize(across(asian_k:other_k, ~ sum(as.numeric(.x), na.rm = TRUE))) 
   
