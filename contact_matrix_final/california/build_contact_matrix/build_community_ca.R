@@ -56,7 +56,7 @@ for(i in 1:length(race_list)){
 cbind(t(as.matrix(contact_race_list[[1]])), t(as.matrix(contact_race_list[[2]])), 
       t(as.matrix(contact_race_list[[3]])), t(as.matrix(contact_race_list[[4]])), 
       t(as.matrix(contact_race_list[[5]]))) %>% as.data.frame() -> contact_matrix
-colnames(contact_matrix) <- c("asian", "white", "black", "other")
+colnames(contact_matrix) <- c("asian", "white", "black", "latino", "other")
 rownames(contact_matrix) <- colnames(contact_matrix)
 
 
