@@ -34,7 +34,7 @@ censustract_ca %>% group_by(GEOID) %>%
   ungroup() -> census_tract_contacts
 
 # calculate total number of children 5-17yo by race/ethnicity at the state level
-state_n = census_tract_nc %>%
+state_n = censustract_ca %>%
   group_by(race_ethnicity)%>%
   summarize(across(pop_size, ~ sum(as.numeric(.x), na.rm = TRUE)))
 
