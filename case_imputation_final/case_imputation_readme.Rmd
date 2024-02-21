@@ -7,7 +7,7 @@ date: "2024-02-20"
 A high proportion of COVID-19 cases are not reported with 
 demographic information such as race/ethnicity. Populations with
 reduced access to quality healthcare and testing resources are 
-more likely to experience infection and severe COVID-19, 
+more likely to experience Covid-19 morbidity and mortality,
 and thus is it not appropriate to omit or distribute
 missing case data randomly. We adapt methods described in 
 Trangucci et al. 2023 to infer the distribution of missing cases
