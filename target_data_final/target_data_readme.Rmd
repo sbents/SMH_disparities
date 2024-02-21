@@ -4,12 +4,34 @@ output: html_document
 date: "2024-02-20"
 ---
 
-These files contain the calibration data for phase 1 and 2 of the SMH Disparities Round. 
+These files contain the calibration data for phase 1 and 2 of the 
+SMH Disparities Round. Race/ethnicity grouping in North Carolina 
+includes 'black', 'white', 'asian', and 'other'. Here 'other' 
+represents the sum of other and Hispanic/Latino. Race/ethnicity 
+grouping in California includes 'latino', 'black', 'white', 
+'asian', and 'other'. All non-Latino groups are non-Hispanic and 
+'latino' represents both Latino and Hispanic. Data is reported 
+for incident cases and deaths. 
 
-Brief file descriptions
+Brief file descriptions: 
 
-target_data_phase1.csv: Calibration data to be used for Phase 1. This file contains incident cases and deaths for California and North Carolina as reported to respective public health departments up until 11/14/2020. 
+target_data_phase1.csv: Calibration data to be used for Phase 1. 
+This file contains incident cases and deaths for California and 
+North Carolina as reported to respective public health departments 
+up until 11/14/2020. 
 
-target_data_phase2.csv: Calibration data to be used for Phase 2. This file contains incident cases and deaths for California and North Carolina as reported to respective public health departments up until 4/3/2021. 
+target_data_phase2.csv: Calibration data to be used for Phase 2. 
+This file contains incident cases and deaths for California and 
+North Carolina as reported to respective public health departments 
+up until 4/3/2021.
+
+
+Case demographic data is sourced from CA Department of Public 
+Health (https://data.chhs.ca.gov/dataset/covid-19-equity-metrics/re
+source/ef29f30e-320c-46cf-86cd-37a36663616d) and NC Department of 
+Public Health (https://covid19.ncdhhs.gov/dashboard/data-behind-das
+hboards). Death demographic data is sourced from 
+The National Center for Health Statistics: 
+https://wonder.cdc.gov/mcd-icd10-provisional.html
 
 For any questions or issues, please contact sbents@alumni.princeton.edu. 
