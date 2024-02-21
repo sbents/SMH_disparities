@@ -25,6 +25,12 @@ This file contains incident cases and deaths for California and
 North Carolina as reported to respective public health departments 
 up until 4/3/2021.
 
+cases_overall_jhu.csv: Overall cases reported to Johns Hopkins 
+Center for Systems Science and Engineering (JHU-CSSE) in California
+and North Carolina. This gives full cases reported, whereas the 
+public health department case data has some missingness by race/
+ethnicity.
+
 
 Case demographic data is sourced from CA Department of Public 
 Health (https://data.chhs.ca.gov/dataset/covid-19-equity-metrics/re
