@@ -1,0 +1,42 @@
+
+Disparities Round Scenario Modeling Hub - Resources
+
+Repository containing code to process target COVID-19 data and auxiliary 
+calibration datasets for Scenario Modeling Hub Disparities rounds. The repository
+contains: 
+- target_data: case and death time series by race/ethnicity 
+- case_imputation: imputed case time series by race/ethnicity 
+- vaccination: vaccination time series by age and race/ethnicity 
+- serology: monthly infection-based and combined vaccination/infection 
+  seroprevalence time series 
+- population_data: state-level population age structure by age and race/ethnicity
+- hospitalization_data: hospitalization time series by race/ethnicity 
+- contact_matrix: synthetic contact matrices by race/ethnicity in the
+  community,household, workplace, school, and combined setting in the 
+  pre-pandemic and pandemic period
+- mobility: weekly mobility data at the census tract level 
+
+
+
+
+License
+
+All source code specific to the overall project is available under an open-source
+MIT license. Some items might be available under different terms and licenses. 
+Please consult these licenses before using it to ensure that you follow the terms
+under which they were released.
+
+
+
+Contributing
+
+Please feel free to open an issue if you identify any issue or would like to 
+suggest an idea/improvement.
+
+
+
+Funding
+Scenario modeling groups are supported through grants to the contributing 
+investigators.The Scenario Modeling Hub site is supported by the MIDAS 
+Coordination Center, NIGMS Grant U24GM132013 to the University of Pittsburgh.
+
