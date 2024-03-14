@@ -140,8 +140,7 @@ ographics_2018.pdf).
 occupational groups deemed essential during the pandemic using the U.S. Bureau of 
 Labor Statistics Occupation Profile (https://www.bls.gov/oes/current/oes_stru.htm#49-0000), 
 which was generated to align with government definitions of the essential workforce 
-(https://covid19.ca.gov/essential-workforce/#:~:text=Health%20care%20providers%20and%20c
-aregivers,social%20workers%20and%20providers%20serving). In the production of the 
+(https://www.cisa.gov/sites/default/files/publications/ECIW_4.0_Guidance_on_Essential_Critical_Infrastructure_Workers_Final3_508_0.pdf). In the production of the 
 workplace contact matrices, we assume that only individuals deemed essential workers 
 maintained contacts during the pandemic while others reduced contacts to 0. We use the 
 UK/European COVID job exposure matrix (Oude Hengel et al., 2022) to infer the number 
